@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .image-container {
+            margin: 20px auto;
+        }
+        .generated-image {
+            max-width: 80%;
+            height: auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generated Image</h1>
+    <div class="image-container">
+        <!-- Use the correct path to the image -->
+        <img src="{{ url_for('static', filename=image_path) }}" class="generated-image" alt="Generated Image">
+    </div>
+    <div>
+        <!-- Use the correct path to the image for download -->
+        <a href="{{ url_for('static', filename=image_path) }}" class="button" download>Download Image</a>
+        <a href="/" class="button">Generate another image</a>
+    </div>
+</body>
+</html>
