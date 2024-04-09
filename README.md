@@ -24,11 +24,9 @@ To get started with Imageify, follow these steps:
 
 ## Usage 🎉
 
-To run the application, execute the following command:
-
-```bash
-flask run --host=0.0.0.0
-```
+1. Enter your desired text prompt in the provided input field.
+2. Click the "Generate Image" button.
+3. Marvel at the generated image based on your prompt!`
 
 ## Contributing 🤝
 
